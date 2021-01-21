@@ -1,26 +1,15 @@
-<?php
+PROGRAM Suma (INPUT, OUTPUT);
 
-$var1 = 2;
+VAR
+  Sumando1, Sumando2,Suma:INTEGER;
 
-        echo "este es un cliclo";
-        echo "escribiendo";
-        $numero = 1;
-        $c = b * 5;
-        $c = $b * 5;
-        $vari = 4.5 * (4.5*5);
-        $vari = $b * ($numero + 5);
-        $c = $b * 5;
-        
-        if ($a>=1 and $a<=100){
-            echo "a esta en el rango";
-            echo "MUY BIEN";
-        }else{
-            echo "a no esta en el rango";
-            echo "intentelo de nuevo";
-        }
-
-        if ($a == 2){
-            echo "este es el numero 2";
-        }
-    
-?>
+BEGIN
+  Write('ingrese un número: ');
+  ReadLn(Sumando1);
+  Write('ingrese otro número: ');
+  ReadLn(Sumando2);
+  Suma:=Sumando1 + Sumando2;
+  WriteLn ('La suma es: ',Suma);
+  WriteLn ('Pulse [Intro] para finalizar...');
+  readln
+END.
